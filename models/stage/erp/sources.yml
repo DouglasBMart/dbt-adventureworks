@@ -1,0 +1,82 @@
+version: 2
+
+sources:
+  - name: erp_sales
+    schema: sales
+    tables:
+      - name: salesorderdetail
+      - name: customer
+      - name: countryregioncurrency
+      - name: creditcard
+      - name: currency
+      - name: currencyrate
+      - name: personcreditcard
+      - name: salesorderheader
+      - name: salesorderheadersalesreason
+      - name: salesperson
+      - name: salespersonquotahistory
+      - name: salesreason
+      - name: salestaxrate
+      - name: salesterritory
+      - name: shoppingcartitem
+      - name: specialoffer
+      - name: specialofferproduct
+      - name: store
+
+  - name: erp_purchasing
+    schema: purchasing
+    tables:
+      - name: productvendor
+      - name: purchaseorderdetail
+      - name: purchaseorderheader
+      - name: shipmethod 
+      - name: vendor  
+
+  - name: erp_production
+    schema: production
+    tables:
+      - name: productcosthistory
+      - name: productdescription
+      - name: productdocument
+      - name: productinventory
+      - name: productlistpricehistory
+      - name: productmodel
+      - name: productmodelillustration
+      - name: productmodelproductdescriptionculture
+      - name: productphoto
+      - name: productproductphoto
+      - name: productreview
+      - name: productsubcategory
+      - name: scrapreason
+      - name: transactionhistory
+      - name: transactionhistoryarchive
+      - name: unitmeasure
+      - name: workorder
+      - name: workorderrouting
+
+  - name: erp_person
+    schema: person
+    tables:
+      - name: address
+      - name: addresstype
+      - name: businessentity
+      - name: businessentityaddress
+      - name: businessentitycontact
+      - name: contacttype
+      - name: countryregion
+      - name: emailaddress
+      - name: password
+      - name: person
+      - name: personphone
+      - name: phonenumbertype
+      - name: stateprovince
+
+  - name: erp_humanresources
+    schema: humanresources
+    tables:
+      - name: department
+      - name: employee
+      - name: employeedepartmenthistory
+      - name: employeepayhistory
+      - name: jobcandidate
+      - name: shift
